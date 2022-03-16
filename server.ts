@@ -17,6 +17,7 @@ import TuitController from "./controllers/TuitController";
 import LikeController from "./controllers/LikeController";
 import mongoose from "mongoose";
 var cors = require('cors')
+require('dotenv').config()
 
 // build the connection string
 // const PROTOCOL = "mongodb+srv";
@@ -31,6 +32,9 @@ mongoose.connect(connectionString);
 
 const app = express();
 app.use(express.json());
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
 
 const corsOptions ={
