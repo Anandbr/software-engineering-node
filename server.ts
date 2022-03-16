@@ -19,12 +19,12 @@ import mongoose from "mongoose";
 var cors = require('cors')
 
 // build the connection string
-const PROTOCOL = "mongodb+srv";
-const DB_USERNAME = process.env.DB_USERNAME;
-const DB_PASSWORD = process.env.DB_PASSWORD;
-const HOST = "cluster0.pstb3.mongodb.net";
-const DB_NAME = "FSEDatabase2";
-const DB_QUERY = "retryWrites=true&w=majority";
+// const PROTOCOL = "mongodb+srv";
+// const DB_USERNAME = process.env.DB_USERNAME;
+// const DB_PASSWORD = process.env.DB_PASSWORD;
+// const HOST = "cluster0.pstb3.mongodb.net";
+// const DB_NAME = "FSEDatabase2";
+// const DB_QUERY = "retryWrites=true&w=majority";
 const connectionString = 'mongodb+srv://anandbr:anandbr@cluster0.pstb3.mongodb.net/FSEDatabase2?retryWrites=true&w=majority';
 // connect to the database
 mongoose.connect(connectionString);
