@@ -17,7 +17,6 @@ import TuitController from "./controllers/TuitController";
 import LikeController from "./controllers/LikeController";
 import mongoose from "mongoose";
 var cors = require('cors')
-require('dotenv').config()
 
 // build the connection string
 // const PROTOCOL = "mongodb+srv";
